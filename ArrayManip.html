@@ -1,0 +1,30 @@
+<html lang='en'>
+
+    <!--
+       Professor Sue Sampson
+       Bellevue University
+    -->
+<head>
+<meta charset="UTF-8">
+</head> 
+<body> 
+<h1>JavaScript Arrays Back and Forth</h1>
+                                    
+     <script>
+        function output (a) {
+        for (var i = 0; i < 4; i++) 
+        	{
+        		document.writeln("<br >" + sports_Teams[i] );
+        	}
+        };
+        
+        var sports_Teams = ["Vikings" ,"Seahawks" , "Chiefs","Raiders" ];
+        document.writeln("<u>Forward List</u>");
+        output(sports_Teams);
+        
+		document.writeln("<br><br><u>Backward List</u>");
+        sports_Teams.reverse();
+         output(sports_Teams);     
+     </script>      
+</body>
+</html>
